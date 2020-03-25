@@ -1,59 +1,64 @@
 > * 原文地址：[Do low interest rates hurt banks’ equity values?](https://www.ecb.europa.eu/pub/economic-research/resbull/2019/html/ecb.rb190716~62990c3aeb.en.html)
 > * 原文作者：[Miguel Ampudia](https://www.ecb.europa.eu/pub/research/authors/profiles/miguel-ampudia.en.html)
-> * 译文出自:(https://github.com/ppp-man/LivingRoom)
+> * 译文出自: [Daxin Chen](https://github.com/ppp-man/LivingRoom)
 > * 本文永久链接：[]()
 > * 译者： [ppp-man](https://github.com/ppp-man)
 
-Do low interest rates hurt banks’ equity values?
+低利率环境会损害银行的价值吗？
 
+名义利率很低时，突发利率的对于银行的影响各异。“一般”情况下，政策利率低于市场预期时能为银行股的股价带来正面刺激。然而当利率非常低，低于预期的利率却给银行股股价带来负面影响。对于依赖零售储蓄为资金来源的银行来说，这种负面影响更大。
 
-The effects of interest rate surprises on banks are different when nominal interest rates are very low. In “normal” times, policy rate announcements that are below market expectations tend to boost banks’ stock prices on average. When interest rates are very low, however, there is a reversal of this effect: at such times, negative rate surprises reduce banks’ stock prices. This negative impact is larger for banks whose funding relies more on retail deposits than on other sources of funding.
+2012年7月，欧洲中央银行降低中央储蓄利率 (deposit facility rate) 至零，这意味着银行存于中央银行的利率并不能带来收益。而且一连串的利率削减把储蓄利率推至负值 -- 2016年3月份的-0.4%。这些措施为的是在低通胀和如弱经济环境下提供更多资金流动性，但也带来了一场关于低利率如何影响经济体的辩论。低利率可以增加总需求以促进经济，但同时减少从支付利息资产得到的收入，削弱了银行的盈利能力。这使得跟踪利率政策的效果对于政策制定者来说非常重要，因为中央银行在货币传导机制中至关重要，信用体系也在经济活动中举足轻重。
 
-In July 2012, the ECB lowered its deposit facility rate – the interest rate that banks receive for depositing money with the central bank overnight – to 0%. A series of further cuts pushed the deposit facility rate into negative territory, reaching -0.4% in March 2016. These cuts were intended to provide more monetary accommodation amid low inflation and weak economic conditions. But they also led to a debate regarding the effects of very low interest rates on the economy. Low rates can strengthen economic conditions by boosting aggregate demand, but they also raise concerns because – by reducing the income from interest-bearing assets – they may hurt the profitability of banks. Monitoring the effects of interest-rate policy on the behaviour of banks is important for policymakers, because of the central role played by banks in the transmission of monetary policy and the importance of credit for economic activity.
+最近的证据说明低利率是把双面刃。例如 Heider et al.(2019) 就发现了负利率减少了一些银行的净资产，其他研究却发现银行利润和贷款都受益于同一因素 (例如 Altavilla et al., 2018 和 Altavilla et al., 2019)。在这项研究中，我们在现有证据的基础上专注于低利率对银行股价的影响。因为股价反映了市场对于银行未来赚钱能力的期望，其演变也提供了除银行现有利润和贷款行为外的前瞻性的信息。
 
-Recent evidence on the effect of very low interest rates on banks is mixed. Heider et al. (2019), for instance, have found that negative interest rates reduce the net worth of some banks. Other studies, however, have found that they have a positive effect on bank profits and lending (e.g. Altavilla et al., 2018 and Altavilla et al., 2019). In this study, we complement existing evidence by focusing on the effect of very low interest rate on banks’ stock prices. Because stock prices reflect expectations about future profitability, their evolution provides forward-looking information that may not be fully captured by banks’ current profits or their lending behaviour.
+识别货币政策的冲击
+要回答我们的问题，我们必须克服两种操作上的问题。第一种是分离利率变化带来的影响：如果一个弱的经济伴随着降低利率和很可能在下跌的银行股价，两者虽然往同一方向变化但这并不代表低利率导致低银行股价。那我们应该如何识别股价的变化是由利率差还是整体经济环境的变化引起呢？第二种是如果市场提前消化了利率差的消息，当政策正式出台时我们未必能够观察到利率带来的变化。为了解决这些问题，我们用事件研究法的高频数据结合 Kuttner (2001) 首创的方法作为识别欧元区货币政策公布时的突发利率。
 
-Identification of monetary policy shocks
-In order to answer our question, we must overcome two methodological challenges. The first is to isolate the effects of changes in interest rates: if interest rates are often lowered when the economy is weak, and banks’ stock values also tend to decline when the economy is weak, then low interest rates and low stock values are bound to be observed together even if low rates do not lead to lower bank stock prices. So how can we distinguish between changes in banks’ equity values that are driven by the interest from those driven by underlying economic conditions? The second challenge is that, if changes in interest rates are anticipated by financial markets, they will react in advance and it may be hard to observe any reaction at the time of a policy rate announcement. In order to solve these challenges, we use high-frequency data in an event study approach, adapting the methodology first developed by Kuttner (2001) to the euro area setting. We use this methodology to identify interest rate surprises around monetary policy announcements.
-
-Here is how it works. For each press statement released after an ECB Governing Council meeting,[2] we construct a short-term interest rate surprise. The surprise is calculated as the change in the price of the euro overnight index average (EONIA) swap contract with a maturity of one month in a narrow window around the press statement (the “event”). For each statement, we construct an “event window” that extends from 10 minutes before the release until 20 minutes after it. The change in the EONIA swap rate between the start and end of the window represents the unexpected change in the level of the ECB’s policy interest rate, i.e. the monetary policy shock. As an intuitive example, picture a case in which the market is fully anticipating a rate cut, perhaps because the economy appears to be weakening. Then, the expected rate is already reflected in the price of the swap, which will therefore be unaffected by if the ECB effectively decides to cut the policy rate according to expectations. In this case, the interest rate surprise is equal to zero. If the ECB decides instead to cut rates more than expected (less than expected), we say that the interest rate surprise is negative (positive).
+具体操作为：对每一篇欧洲央行理事会议公告[2]后的短暂窗口（事件），我们通过计算欧元隔夜平均指数 (ENOIA) 的一个月掉期合同的差价量化短期利率的影响。每一则公告的“事件窗口”则定为公告前的十分钟至公告后的二十分钟。合同在这个窗口的差价代表了利率的非预期变化的影响，也就是货币政策带来的突发性。直观想像一下当降利率的消息提前被市场充分消化了(或许经济下行的情况下)，合同的价格并不会因为央行的公告而产生变化，突发利率等于零。如果欧洲央行决定比预期降更多 (或更少)利率，突发利率则为负 (或正)。
 
 We repeat the same procedure using the two-year EONIA swap contract.[3] Thus, we construct both a short-term rate surprise and a long-term rate surprise.[4]
+我们用 ENOIA 的两年期掉期合同重复了同样的步骤[3]，便量化了短期和长期的利率影响。
 
-The impact of monetary policy surprises over time
-After constructing our interest rate surprise, we assess how it affects the stock price of European banks. In particular, we analyse the ability of surprises to explain changes in the stock price of banks in a 30-minute window around the release of the press statement. We do so by conducting a regression analysis using our interest rate surprises.[5] We divide our sample into three periods. The first is the pre-crisis period, from the beginning of our sample period until the failure of Lehman Brothers. The second is the crisis period, from the failure of Lehman Brothers until the setting of the ECB’s deposit facility rate to zero. The third is the period of very low and negative interest rates, from the setting of the ECB’s deposit facility rate to zero until the end of the sample period.
+货币政策的影响随时间的演变
+我们接着评估突发利率对于欧洲的银行的影响。我们针对银行股价围绕公告的 30 分钟窗口作回归分析。[5] 样本被分为三个时间段，雷曼兄弟崩塌前为第一个，崩塌后至欧洲央行设储蓄利率为零为第二个，零利率之后的为第三个时间段。
 
-In the first two periods, negative rate surprises had a positive effect on banks’ equity values, an effect that became stronger after the crisis started. In the pre-crisis period, a 25 basis point negative surprise resulted in an average increase of 0.76% in bank stock prices, while in the crisis period a negative surprise of the same magnitude boosted bank equity values on average by 1.3%. However, these effects reversed during the period of very low and negative rates. In this environment, negative rate surprises were detrimental to bank equity values. We find that a 25 basis point negative surprise lowered bank equity values by 2.0% during this period.
+第一和第二个时间段中，负的突发利率对于银行的价值有正面影响，尤其在第二个时间段中，正面影响的程度更大。08 年金融危机前每 25 个基点负突发利率导致平均 0.76% 的股价增长，而 08 年后同样的 25 个基点的变化带来 1.3% 的股价增长。负突发利率的效果在低利率的的环境下却截然相反，对于银行价值的伤害更是突出。我们发现同样 25 个基点的负利率变化减少 2% 的银行价值。
 
-The impact of monetary policy surprises across banks
-What explains our results? What is the mechanism underpinning our findings? One general channel, which we do not consider here, is that monetary policy provides information about the economic outlook: a negative interest rate surprise, for instance, may signal that the economic outlook is weaker than expected thereby leading to a decline in stock prices. [6] But interest rate surprises also affect banks through more direct channels, such as: (i) changes in net interest margins; (ii) the revaluation of long-term assets on the balance sheet, and; (iii) changes in the demand for loans and deposits, asset quality, and off-balance sheet positions. While many of these direct channels have similar effects on banks’ profits whether rates are high or low, some do not.
+货币政策的影响在银行间的展现
+我们的结果是由什么支撑着？其背后的机制又是什么？一种我们这里不考虑的解释方式的是货币政策提供了官方对经济展望的信息，如负突发利率可能表明对未来经济的展望更偏消极因而导致股价的下降。[4] 但突发利率也通过其他方式更直接影响银行，包括 1)净利息收益 2)资产负债表上长期资产的重新估值 3)对贷款和储蓄的需求变化，资产质量，资产负债表外的一些方面。这些直接的渠道对于银行的影响各异。
 
-In particular, the effect of interest rate surprises on net interest margins is likely to change in a very low interest rate environment. The reason is that banks are reluctant to pay negative rates on deposits to retail customers.[7] This means that, when short-term rates are already close to zero, further declines in short-term rates are likely to squeeze the net interest margins of deposit-intensive banks, as their borrowing costs do not fall as much as market rates, potentially hurting their profitability. Banks that rely more on other types of funding (e.g. wholesale funding), in contrast, should not be hurt as much by negative rates, since they can pass on these negative rates in their funding. Chart 1 provides preliminary evidence corroborating this hypothesis: deposit-intensive banks underperformed relative to low-deposit banks over the period in which short-term rates dropped to zero and below.
+突发利率对于净利息收益的影响很有可能在低利率的环境下有所不同。原因是银行不愿意给零售客户负利率。[6] 这也意味着当短期利率已经接近零，银行的借贷成本下降并不比市场利率快，短期利率的持续的下跌很可能把主营储蓄的银行的利润挤干。主营批发的银行相比之下受的伤害更少，因为他们可以更灵活以低利率融资。图一提供了初步佐证我们的猜想：主营储蓄的银行比其他银行在低利率环境下表现更差。
 
-To further investigate whether the deposit channel is behind our results, we test this prediction, again with a regression analysis. In the analysis, we interact our rate surprises with the level of the deposit ratios of the banks in our sample (and also our sample sub-periods). The coefficients of these interaction terms indicate how the relationship observed between interest rate surprises and stock returns depends on banks’ funding models: a positive coefficient indicates that the effect of negative rate surprises on banks’ stock prices is stronger for banks with high deposit ratios. Results from this regression analysis are summarised in Chart 2.
+我们仍用回归分析进一步调查储蓄这一特性是否影响我们的结果。我们把银行的储蓄率加入样本分析，得出的系数表示突发利率和股价回报是如何依赖于银行的融资模式：正系数说明负突发利率对储蓄率高的银行的股价影响更大。回归分析的结果总结在图二中。
 
-In normal times, illustrated in the left panel of the chart, negative rate surprises appear to benefit all banks in a similar way, irrespective of their funding structure. A 100 basis point negative interest rate surprise raises the stock prices of banks by about 2 to 2.5%. In the period of very low and negative rates the effects are reversed, as we have already seen. Moreover, as the right panel shows, the differential effects across bank types are substantially more pronounced than in normal times. Specifically, during the very low and negative rate period, deposit-intensive banks exhibit much larger declines in their equity values in response to negative rate surprises than banks that rely less on deposit funding. The decline for a “high-deposit bank” is almost 8 percentage points higher than for a “low-deposit bank”.
+图左描绘了正常情况下负突发利率似乎对所有银行的影响是一致的，不受融资结构的影响。100 基点的负突发利率把银行股价拉升了 2.5%，在低利率环境得到的结果正如我们所了解是相反的。另外图右所展示的该影响对于不同融资结构的银行相比正常时期有很大的不同。表面看来在低利率时期，更侧重储蓄的银行面对负突发利率比其他银行表现明显更糟。“高储蓄率”银行比“低储蓄率”银行跌了近 8%。
 
 Chart 1
+图一
 
 Evolution of stock prices of high and low-deposit banks
+高和低储蓄率银行的股价演变
+![](https://www.ecb.europa.eu/pub/economic-research/resbull/2019/html/rb190716/ecb.rb190716.en_img0.png?ae8f86b85074794f07296a698b85131f)
 
 
-Notes: The chart shows the average stock price, normalised to 1 on 5 July 2012 for each stock, for banks in the highest and lowest quartiles of the deposit ratio distribution.
+注：图中显示的是 2012 年 7 月 1 日对最高的四分位和最低的四分位中每只股票的平均股价归一到 1 的数据
 
 Chart 2
+图二
 
-Response of banks’ stock values to rate surprises: the role of deposits
+银行股价对突发利率的反应：储蓄融资的角色
+![](https://www.ecb.europa.eu/pub/economic-research/resbull/2019/html/rb190716/ecb.rb190716.en_img1.png?2027e26fbeb061f3da94a34a2370086c)
+
+注：图中展示了短期突发利率对于银行股价关于银行储蓄率的估算影响和 95% 的置信区间。为了方便展示，储蓄率趋势的样本平均加了它的去趋势比。左边图展示了金融危机前时期，右图展示了低利率/负利率时期的数据。
 
 
-Notes: The chart shows the estimated impact and 95% confidence intervals (CI) of the short-term rate surprise on bank equity values as a function of banks’ deposit ratios. For ease of presentation, the sample mean of the trend in the deposit ratio is added back to its de-trended ratio. The left panel shows the pre-crisis period and the right panel shows the very low/negative rate period.
+结语
+负的突发利率在正常时期对银行股价有积极影响，这里的研究同时展示了低或者负利率环境下同样的突发利率对银行股价有负面作用，而且对于储蓄率高的银行负面影响更大。
 
-Concluding remarks
-During normal times, negative interest rate surprises have a positive effect on the stock prices of banks. The research presented here shows that things are different when interest rates are very low or negative. In such an environment, negative interest rate surprises seem to have a negative effect on banks’ stock prices. This reversal, moreover, is much larger for banks that rely more on deposit funding.
+低利率影响经济的多个层面，也不仅仅是通过银行对社会产生影响。即使是通过银行产生的影响也是多个层面的。一些银行能受益于负利率(如 Altavilla et al., 2018 and Altavilla et al., 2019)而其他则遭受贬值(如 Heider et al., 2019)。这项研究补充了现有的突发利率在低利率环境如何影响银行股价的证据。最后我们要强调低利率需要全局看待，也是充满挑战的课题。
 
-Let us conclude where we started: low interest rates have many effects of the economy, not all of which operate through banks. And even those effects that do operate through banks are multi-layered, with some studies showing that negative rates can reduce the net worth of some banks (e.g. Heider et al., 2019) while others showing that negative rates may actually boost profits and lending by some banks (e.g. Altavilla et al., 2018 and Altavilla et al., 2019). This study complements existing evidence by documenting the effect of interest rate surprises on banks’ stock prices in low-interest rate environments. Ultimately, a holistic view of low interest rates must consider all of these effects jointly. This is an exciting research agenda going forward.
-
-References
+参考
 Altavilla, C., Boucinha, M. and Peydró, J.L. (2018), “Monetary policy and bank profitability in a low interest rate environment”, Economic Policy, Vol. 33(96), pp. 531-586.
 
 Altavilla, C., Burlon, L., Giannetti, M. and Holton, S. (2019), “Is there a zero lower bound? The effects of negative policy rates on banks and firms”, Working Paper Series, No 2289, ECB, June.
@@ -68,10 +73,9 @@ Jarociński, M. and Karadi, P. (2018), “Deconstructing monetary policy surpris
 
 Kuttner, K.N. (2001), “Monetary policy surprises and interest rates: Evidence from the Fed funds futures market”, Journal of Monetary Economics, Vol. 47(3), June, pp. 523-544.
 
-[1]Disclaimer: This article was written by Miguel Ampudia (Economist, Directorate General Research, Financial Research Division). It is based on a paper entitled “Monetary policy and bank equity values in a time of low interest rates” by Miguel Ampudia and Skander Van den Heuvel. The author gratefully acknowledges the comments of Carlo Altavilla, Paul Dudenhefer, Florian Heider, Manfred Kremer, Luc Laeven, Simone Manganelli, Alberto Martín, Zöe Sprokel and Skander Van den Heuvel. The views expressed here are those of the author and do not necessarily represent the views of the European Central Bank and the Eurosystem.
-[2]We also construct a policy rate surprise around the press conference event. However, since our analysis does not produce significant results when looking at the press conference, we have omitted them from this bulletin for the sake of brevity.
-[3]As a robustness check, we also used prices of longer-term debt, such as the five and ten-year Bund. The results remained the same.
-[4]Note that an emerging strand of literature further divides monetary policy shocks into a pure monetary policy part and a private information release about the future state of the economy (see Jarociński and Karadi, 2018). We do not distinguish between these two components in our analysis.
-[5]Technical details of our baseline specification are available on request.
-[6]In this regard, there is an emerging strand of literature that further divides monetary policy shocks into a pure monetary policy part and a private information release about the future state of the economy (see Jarociński and Karadi, 2018). We do not distinguish between these two components in our analysis.
-[7]If this were to happen, depositors would exchange their deposits for cash, which pays a 0% nominal rate. And even if rates were not negative enough to overcome the opportunity costs of holding cash, customers would most likely find any negative rate unacceptable, as evidenced by the practically non-existent case of negative nominal interest rates being charged on deposits of households. There is more leeway on corporate deposits, since these represent larger per customer volumes and thus holding cash would pose more storage difficulties. As of May 2019, 30% of corporate deposits in the euro area are priced at a negative rate (Altavilla et al., 2019).
+[1]声明：这边文章由 Miguel Ampudia (经济学家，首席研究学者，金融研究分支) 撰写。此文基于 Miguel Ampudia 和 Skander Van den Heuvel 的一篇名为 “Monetary policy and bank equity values in a time of low interest rates” 的论文。作者鸣谢 Carlo Altavilla, Paul Dudenhefer, Florian Heider, Manfred Kremer, Luc Laeven, Simone Manganelli, Alberto Martín, Zöe Sprokel and Skander Van den Heuvel 的评语。此处的观点仅为作者观点，并不能代表欧洲中央银行或欧元体系的观点。
+[2]我们围绕新闻公告时间测量利率变化。然而公告时的数据并没不能为我们带来有用的结论，我们在此处省略以便阅读。
+[3]我们也用了如五年和十年长期债的价格作为模型稳定性的测试。结果时一致的。
+[4]注意有文献进一步区别纯货币政策和关于未来经济发展的信息 (Jarociński and Karadi, 2018)。我们的分析中没有作这样的区分。
+[5]对于我们基线说明的一些技术细节可以联系我们取得。
+[6]如有发生，存款人会取出他们的存款，即 0% 利率。即使负利率的成本高于拿着现金的机会成本，不难想象客户依然难以接受负利率的现实。对于商业存款，负利率则有更多的空间，毕竟单客户的存款更多，现金的存储困难更大。直至 2019 年五月，欧元区的 30% 的商业存款都忍受着负利率 (Altavilla et al., 2019)。
