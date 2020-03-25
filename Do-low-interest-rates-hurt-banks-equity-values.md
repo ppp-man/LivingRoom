@@ -1,7 +1,7 @@
 > * 原文地址：[Do low interest rates hurt banks’ equity values?](https://www.ecb.europa.eu/pub/economic-research/resbull/2019/html/ecb.rb190716~62990c3aeb.en.html)
 > * 原文作者：[Miguel Ampudia](https://www.ecb.europa.eu/pub/research/authors/profiles/miguel-ampudia.en.html)
 > * 译文出自: [Daxin Chen](https://github.com/ppp-man/LivingRoom)
-> * 本文永久链接：[]()
+> * 本文永久链接：[https://www.ecb.europa.eu/pub/economic-research/resbull/2019/html/ecb.rb190716~62990c3aeb.en.html](https://www.ecb.europa.eu/pub/economic-research/resbull/2019/html/ecb.rb190716~62990c3aeb.en.html)
 > * 译者： [ppp-man](https://github.com/ppp-man)
 
 低利率环境会损害银行的价值吗？
